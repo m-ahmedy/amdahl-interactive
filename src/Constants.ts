@@ -1,0 +1,1 @@
+export const F_STEP = 0.01;

@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-chart-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-chart-item {
+  flex-basis: 48%;
+}
+
+.container {
+  padding: 2rem;
+  background-color: cornsilk;
+  min-height: 100vh;
+}
+
+.canvas-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group {
+  flex-basis: 20%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group input {
+  font-size: inherit;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.input-group label {
+  display: block;
+}
+
+.input-group p {
+  display: block;  
+  margin-top: 0.5rem;
+}
+
+.chart-at {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
